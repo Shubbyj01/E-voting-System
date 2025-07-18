@@ -1,0 +1,70 @@
+/* src/styles/vote.css */
+
+.vote-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  text-align: center;
+}
+
+.candidate-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.candidate-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.message {
+  margin: 15px 0;
+  font-weight: bold;
+  color: green;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .vote-container {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .candidate-item {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+}

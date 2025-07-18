@@ -1,0 +1,36 @@
+.admin-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.results, .votes {
+  margin-top: 20px;
+}
+
+.export-buttons button {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .export-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .export-buttons button {
+    margin: 5px 0;
+  }
+}
