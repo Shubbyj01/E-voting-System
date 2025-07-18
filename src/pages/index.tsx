@@ -37,6 +37,7 @@ export default function SplashPage() {
           fontSize: "clamp(1rem, 3vw, 1.2rem)",
           marginTop: "1rem",
           maxWidth: "600px",
+          color: "black",
         }}
       >
         A secure, fast, and transparent way to cast your vote online. 

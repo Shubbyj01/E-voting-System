@@ -119,15 +119,15 @@ export default function VotePage() {
 
   return (
     <div style={{ padding: "2rem", backgroundColor: "#f4f4f4", minHeight: "100vh" }}>
-      <h1 style={{ textAlign: "center" }}>Vote for Your Candidate</h1>
+      <h1 style={{ textAlign: "center", color: "black", }}>Vote for Your Candidate</h1>
       {userEmail && (
-        <p style={{ fontSize: "1rem", marginBottom: "1rem", textAlign: "center" }}>
+        <p style={{ fontSize: "1rem", marginBottom: "1rem", textAlign: "center", color: "black" }}>
           Welcome, <strong>{userEmail}</strong> 👋
         </p>
       )}
 
       {hasVoted ? (
-        <div style={{ textAlign: "center", marginTop: "2rem" }}>
+        <div style={{ textAlign: "center", marginTop: "2rem", color: "black" }}>
           <h2>You have already voted ✅</h2>
           <button
             onClick={() => {
@@ -148,7 +148,7 @@ export default function VotePage() {
           </button>
         </div>
       ) : (
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "2rem" }}>
+        <div style={{ display: "flex", flexWrap: "wrap", color: "black", justifyContent: "center", gap: "2rem" }}>
           {candidates.map((candidate) => (
             <div
               key={candidate.id}
@@ -159,6 +159,7 @@ export default function VotePage() {
                 boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
                 textAlign: "center",
                 width: "250px",
+                color: "black",
               }}
             >
               <h3>{candidate.name}</h3>
